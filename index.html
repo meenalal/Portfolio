@@ -6,6 +6,7 @@
   <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
   <!-- Custom Theme files -->
   <link href="css/style.css" rel='stylesheet' type='text/css' />
   <!-- Custom Theme files -->
@@ -817,7 +818,8 @@ Smartphone Compatible web template" />
               <div class="clearfix"> </div>
             </div>
         <div class="col-md-6 mail_right">
-          <form action="mail.php" method="post">
+          <div id="form-messages"></div>
+          <form id="ajax-contact" action="mail.php" method="post">
             <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"
               required="">
             <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
@@ -826,7 +828,6 @@ Smartphone Compatible web template" />
               required="">
             <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
             <input type="submit" value="Send">
-
           </form>
         </div>
         <div class="clearfix"></div>
