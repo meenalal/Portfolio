@@ -5,6 +5,7 @@ $(document).ready(function () {
         var email = $("input[name='Email']", this).val();
         var phone = $("input[name='Phone']", this).val();
         var message = $("textarea[name='Message...']", this).val();
+        message = message.replace(/["']/g, "")
 
         if (email !== "") {
             $.post("https://2jadto2g2i.execute-api.us-east-1.amazonaws.com/default/sendcontactemail", `{
